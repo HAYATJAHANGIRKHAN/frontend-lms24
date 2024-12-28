@@ -1,9 +1,13 @@
 import './App.css';
+import { Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <h1>HAYAT JAHANGIR KHAN</h1>
+    <>                        
+    <Routes>
+
+    </Routes>
+      
     </>
   );
 }

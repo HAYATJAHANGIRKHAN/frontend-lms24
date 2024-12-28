@@ -22,8 +22,10 @@ export default [
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      plugins :[ 'simple-import-sort'],
     },
     rules: {
+      'simple-import-sort/imports': 'error',
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,

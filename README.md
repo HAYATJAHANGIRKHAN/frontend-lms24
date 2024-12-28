@@ -50,9 +50,9 @@ cd lms-frontend
  npm i -D eslint-plugin-simple-import-sort
 
  # Add .eslintrc.cjs
- path -> .eslintrc.cjs -> plugins ->  'simple-import-sort': simpleimportsort,
+ path -> .eslintrc.cjs -> plugins :[ 'simple-import-sort'],
 
- Rules -> 'simple-import-sort/imports': error,
+ Rules ->  'simple-import-sort/imports': 'error',
 
  # To enable auto import  sort on file save  in vscode 
 
