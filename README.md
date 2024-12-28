@@ -18,12 +18,13 @@ cd lms-frontend
 
  3./** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"], // this copy and paste in tailwind.config.js 
   theme: {
     extend: {},
   },
   plugins: [],
 }
+# copy this cmd and paste in index.css
  4.@tailwind base;
 @tailwind components;
 @tailwind utilities;
