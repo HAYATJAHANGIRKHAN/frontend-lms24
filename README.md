@@ -63,3 +63,6 @@ cd lms-frontend
  add the following  config -> " editor.codeActionsOnSave " :{
   "source.fixAll.eslint": true
  }
+  
+  # add in tailwind.config.js 
+    plugins: [require("daisyui"), require("@tailwindcss/line-clamp")]
