@@ -12,13 +12,13 @@ cd lms-frontend
  
 
  # Tailwind setup
- 1.npm install -D tailwindcss  // install tailwindCss
+ 1.npm install -D tailwindcss postcss autoprefixer // install tailwindCss
 
 2. npx tailwindcss init  // create tailwind confiq file 
 
  3./** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}"], // this copy and paste in tailwind.config.js 
+  content: ["./index.html","./src/**/*.{html,js,jsx,ts,tsx}"], // this copy and paste in tailwind.config.js 
   theme: {
     extend: {},
   },
@@ -28,6 +28,9 @@ module.exports = {
  4.@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+npx tailwind init -p 
+npm i -D postcss autoprefixer
 
 5. npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 
