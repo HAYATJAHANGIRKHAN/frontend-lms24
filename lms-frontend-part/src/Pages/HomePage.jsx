@@ -32,8 +32,8 @@ function HomePage() {
                     </div>
                 </div>
                 <div className="w-1/2 flex items-center justify-center">
-          <img src={homePageMainImage} alt="home page image" />
-        </div>
+                    <img src={homePageMainImage} alt="home page image" />
+                </div>
             </div>
         </HomeLayout>
     );
