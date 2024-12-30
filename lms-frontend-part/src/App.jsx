@@ -34,6 +34,7 @@ function App() {
         <Route  element={<RequireAuth allowedRoles={["Admin","USER"]}/>}>
         
         <Route path='/user/profile' element={<Profile/>}/>
+        <Route path='/user/editprofile' element={<EditProfile/>}/>
         </Route>
 
 
