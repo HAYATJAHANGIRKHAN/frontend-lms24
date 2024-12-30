@@ -32,14 +32,14 @@ function HomeLayout({ children }) {
     }
 
      // function to handle logout
-  const handleLogout =  (event) => {
+  const handleLogout = async (event) => {
     event.preventDefault();
 
     // calling logout action
-    // const res = await dispatch(logout());
+    const res = await dispatch(logout()); 
 
     // redirect to home page if true
-    // if (res?.payload?.success) 
+    if (res?.payload?.success) 
         navigate("/");
   };
 
