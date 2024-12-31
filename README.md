@@ -66,3 +66,7 @@ cd lms-frontend
   
   # add in tailwind.config.js 
     plugins: [require("daisyui"), require("@tailwindcss/line-clamp")]
+
+
+# Add in index.html
+ <script src="https://checkout.razorpay.com/v1/checkout.js"></script>

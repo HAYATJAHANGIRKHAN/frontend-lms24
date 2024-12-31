@@ -12,6 +12,8 @@ import Denied from './Pages/Denied';
 import CourseDescription from './Pages/Course/CourseDescription';
 import RequireAuth from './Components/Auth/RequireAuth';
 import CreateCourse from './Pages/Course/CreateCourse';
+import Checkout from './Pages/Payment/Checkout';
+import CheckoutSuccess from './Pages/Payment/CheckoutSuccess';
 
 function App() {
   return (
@@ -32,9 +34,10 @@ function App() {
         </Route>
 
         <Route  element={<RequireAuth allowedRoles={["Admin","USER"]}/>}>
-        
-        <Route path='/user/profile' element={<Profile/>}/>
+         <Route path='/user/profile' element={<Profile/>}/>
         <Route path='/user/editprofile' element={<EditProfile/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
+        <Route path='/checkout/success' element={<CheckoutSuccess/>}/>
         </Route>
 
 
